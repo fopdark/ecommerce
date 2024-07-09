@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: picaverse-fe-prod
+spec:
+  selector:
+    matchLabels:
+      app: picaverse-fe-prod
+  template:
+    metadata:
+      labels:
+        app: picaverse-fe-prod
+    spec:
+      containers:
+        - name: picaverse-fe-prod
+          image: picaverse-fe-prod:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000

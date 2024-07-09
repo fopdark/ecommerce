@@ -1,0 +1,13 @@
+.footer-address {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+  background: #091d3e;
+}
+
+@media (max-width: 516px) {
+  .footer-address p{
+    white-space: pre-line;
+  }
+}

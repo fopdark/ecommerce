@@ -1,0 +1,71 @@
+{
+  "name": "picaverse-share",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "clean": "rimraf .next .swc out coverage",
+    "lint": "next lint",
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "check-types": "tsc --noEmit --pretty",
+    "commit": "cz",
+    "prepare": ""
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "antd": "^5.18.3",
+    "axios": "^1.6.5",
+    "axios-hooks": "^5.0.2",
+    "bootstrap": "^5.3.2",
+    "google-map-react": "^2.2.1",
+    "next": "^14.0.4",
+    "next-intl": "^3.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-slick": "^0.30.2",
+    "react-toastify": "^10.0.4",
+    "slick-carousel": "^1.8.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@commitlint/cz-commitlint": "^18.4.4",
+    "@commitlint/types": "^18.4.4",
+    "@types/google-map-react": "^2.1.10",
+    "@types/node": "^20.11.1",
+    "@types/react": "^18.2.47",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "autoprefixer": "^10.4.19",
+    "commitizen": "^4.3.0",
+    "cssnano": "^6.0.3",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.2",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.4.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
