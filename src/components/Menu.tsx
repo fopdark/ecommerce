@@ -7,7 +7,7 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Menu } from "antd";
+import { ConfigProvider, Menu } from "antd";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -155,7 +155,7 @@ const items: MenuItem[] = [
   {
     label: "Sơn Thể Thao",
     key: "6",
-  }
+  },
 ];
 
 const MenuAntd: React.FC = () => {
@@ -167,21 +167,32 @@ const MenuAntd: React.FC = () => {
   };
 
   return (
-    <div className="bg-white sticky top-0 z-10 border border-gray-300 p-4 ">
-      <div className="max-w-[1200px] mx-auto flex gap-10">
-        <img src="/assets/img/logo/logo.png" className="h-[46px]" />
-        <div className="flex-1 flex justify-center">
-          <Menu
-            className="bg-transparent w-full font-bold text-[16px]"
-            onClick={onClick}
-            selectedKeys={[current]}
-            mode="horizontal"
-            items={items}
-            // theme="dark"
-          />
+    <ConfigProvider
+      theme={{
+        components: {
+          Menu: {
+            padding: 8,
+            fontSize: 18,
+          },
+        },
+      }}
+    >
+      <div className="bg-white sticky top-0 z-10 border border-gray-300 p-4 ">
+        <div className="max-w-[1200px] mx-auto flex gap-10">
+          <img src="/assets/img/logo/logo.png" className="h-[46px]" />
+          <div className="flex-1 flex justify-center">
+            <Menu
+              className="bg-transparent w-full font-bold"
+              onClick={onClick}
+              selectedKeys={[current]}
+              mode="horizontal"
+              items={items}
+              // theme="dark"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </ConfigProvider>
   );
 };
 
