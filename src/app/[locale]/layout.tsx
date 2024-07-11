@@ -10,6 +10,10 @@ import React from 'react';
 
 import Loading from '@/components/Loading';
 
+export async function generateStaticParams() {
+  return [{ locale: 'en-US' }, { locale: 'ko' }];
+}
+
 export default function RootLayout({
   children,
   params: { locale },
