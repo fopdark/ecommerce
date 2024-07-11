@@ -1,14 +1,9 @@
-"use client";
-import React from "react";
-import { Avatar, Button, Card } from "antd";
+'use client';
 
-const { Meta } = Card;
-function ReviewItem(props: any) {
-  return (
-    <div className="px-2">
-      
-    </div>
-  );
+import React from 'react';
+
+function ReviewItem() {
+  return <div className="px-2"></div>;
 }
 
 export default ReviewItem;

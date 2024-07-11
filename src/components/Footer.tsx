@@ -1,9 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { useTranslations } from "next-intl";
-
-import Address from "./Address";
-import SubscribeForm from "./SubscribeForm";
-import Link from "antd/es/typography/Link";
 
 // MST:0310965199
 
@@ -15,7 +10,7 @@ import Link from "antd/es/typography/Link";
 
 // Website: www.diepkienhuy.com
 const Footer = () => {
-  const t = useTranslations();
+  // const t = useTranslations();
   return (
     // <footer className=" bg-[#000080] p-10 text-white">
     //   <div className="max-w-[1200px] mx-auto">
@@ -87,7 +82,7 @@ const Footer = () => {
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  //style="color:transparent"
+                  // style="color:transparent"
                   src="/assets/icons/facebook.png"
                 />
               </a>
@@ -99,7 +94,7 @@ const Footer = () => {
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  //style="color:transparent"
+                  // style="color:transparent"
                   src="/assets/icons/linkedin.png"
                 />
               </a>
@@ -111,7 +106,7 @@ const Footer = () => {
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  //style="color:transparent"
+                  // style="color:transparent"
                   src="/assets/icons/instagram.png"
                 />
               </a>
@@ -123,7 +118,7 @@ const Footer = () => {
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  //style="color:transparent"
+                  // style="color:transparent"
                   src="/assets/icons/twitter.png"
                 />
               </a>
@@ -139,7 +134,7 @@ const Footer = () => {
                   height="36"
                   decoding="async"
                   data-nimg="1"
-                  //style="color:transparent"
+                  // style="color:transparent"
                   src="/assets/icons/youtube.png"
                 />
               </a>
@@ -162,11 +157,11 @@ const Footer = () => {
                 </svg>
               </div>
               <div className="ml-[18px] flex flex-col gap-2">
-              <a
+                <a
                   href="tel:+84915441511"
                   className="font-Inter text-[14px] font-medium text-white"
                 >
-                  0915.441.511 ( Mr.Duy) 
+                  0915.441.511 ( Mr.Duy)
                 </a>
                 <a
                   href="tel:+84912851511"

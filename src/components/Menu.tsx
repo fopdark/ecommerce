@@ -1,15 +1,10 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import {
-  AppstoreOutlined,
-  MailOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
-import type { MenuProps } from "antd";
-import { ConfigProvider, Menu } from "antd";
+import type { MenuProps } from 'antd';
+import { ConfigProvider, Menu } from 'antd';
+import React, { useState } from 'react';
 
-type MenuItem = Required<MenuProps>["items"][number];
+type MenuItem = Required<MenuProps>['items'][number];
 
 // const items: MenuItem[] = [
 //   {
@@ -133,36 +128,36 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
   {
-    label: "Sơn Epoxy, Sơn Sàn",
-    key: "1",
+    label: 'Sơn Epoxy, Sơn Sàn',
+    key: '1',
   },
   {
-    label: "Sơn Sàn PU",
-    key: "2",
+    label: 'Sơn Sàn PU',
+    key: '2',
   },
   {
-    label: "Chống Thấm",
-    key: "3",
+    label: 'Chống Thấm',
+    key: '3',
   },
   {
-    label: "Phủ FRP, Phủ Compositer",
-    key: "4",
+    label: 'Phủ FRP, Phủ Compositer',
+    key: '4',
   },
   {
-    label: "Đánh Bóng Bê Tông",
-    key: "5",
+    label: 'Đánh Bóng Bê Tông',
+    key: '5',
   },
   {
-    label: "Sơn Thể Thao",
-    key: "6",
+    label: 'Sơn Thể Thao',
+    key: '6',
   },
 ];
 
 const MenuAntd: React.FC = () => {
-  const [current, setCurrent] = useState("mail");
+  const [current, setCurrent] = useState('mail');
 
-  const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
+  const onClick: MenuProps['onClick'] = (e) => {
+    console.log('click ', e);
     setCurrent(e.key);
   };
 

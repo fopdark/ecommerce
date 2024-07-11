@@ -1,5 +1,6 @@
-"use client";
-import React from "react";
+'use client';
+
+import React from 'react';
 
 function ProjectNew(props: any) {
   const { img, location, name } = props;

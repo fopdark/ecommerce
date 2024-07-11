@@ -1,10 +1,10 @@
-"use client";
-import { Avatar, Button } from "antd";
-import React, { useState } from "react";
-import Slider from "react-slick";
-import ReviewItem from "./ReviewItem";
+'use client';
 
-var settings = {
+import { Avatar } from 'antd';
+import React from 'react';
+import Slider from 'react-slick';
+
+const settings = {
   dots: false,
   autoplay: true,
   autoplaySpeed: 3000,
@@ -15,12 +15,12 @@ var settings = {
   arrows: false,
 };
 
-function ReviewSlider(props: any) {
+function ReviewSlider() {
   return (
     <div className="py-5">
       <Slider {...settings}>
-        {new Array(4).fill("").map((item, index) => (
-          <div>
+        {new Array(4).fill('').map((_, index) => (
+          <div key={index}>
             <div
               className="flex gap-2 mx-2 p-2 border border-[#000080] rounded-2xl bg-blue-100"
               key={index}

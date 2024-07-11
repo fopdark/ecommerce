@@ -1,9 +1,11 @@
-"use client";
-import React, { useState } from "react";
-import Slider from "react-slick";
-import ProjectNew from "./ProjectNew";
+'use client';
 
-var settings = {
+import React from 'react';
+import Slider from 'react-slick';
+
+import ProjectNew from './ProjectNew';
+
+const settings = {
   dots: false,
   autoplay: true,
   autoplaySpeed: 3000,
@@ -15,46 +17,43 @@ var settings = {
 
 const products = [
   {
-    name: "Dự án A",
-    img: "/assets/img/epoxy/1.jpg",
-    location: "Vũng Tàu",
+    name: 'Dự án A',
+    img: '/assets/img/epoxy/1.jpg',
+    location: 'Vũng Tàu',
   },
   {
-    name: "Dự án B",
-    img: "/assets/img/epoxy/2.jpg",
-    location: "Đà Lạt",
+    name: 'Dự án B',
+    img: '/assets/img/epoxy/2.jpg',
+    location: 'Đà Lạt',
   },
   {
-    name: "Dự án C",
-    img: "/assets/img/epoxy/3.jpg",
-    location: "Bảo Lộc",
+    name: 'Dự án C',
+    img: '/assets/img/epoxy/3.jpg',
+    location: 'Bảo Lộc',
   },
   {
-    name: "Dự án D",
-    img: "/assets/img/epoxy/4.jpg",
-    location: "Bình Dương",
+    name: 'Dự án D',
+    img: '/assets/img/epoxy/4.jpg',
+    location: 'Bình Dương',
   },
   {
-    name: "Dự án E",
-    img: "/assets/img/epoxy/5.jpg",
-    location: "Hồ Chí Minh",
+    name: 'Dự án E',
+    img: '/assets/img/epoxy/5.jpg',
+    location: 'Hồ Chí Minh',
   },
   {
-    name: "Dự án F",
-    img: "/assets/img/epoxy/6.jpg",
-    location: "Hà Nội",
+    name: 'Dự án F',
+    img: '/assets/img/epoxy/6.jpg',
+    location: 'Hà Nội',
   },
   {
-    name: "Dự án G",
-    img: "/assets/img/epoxy/7.jpg",
-    location: "Đà Nẵng",
+    name: 'Dự án G',
+    img: '/assets/img/epoxy/7.jpg',
+    location: 'Đà Nẵng',
   },
 ];
 
-function ProjectSlider(props: any) {
-  const { title, categories, isPrice } = props;
-  const [selectedCategory, setSelectedCategory] = useState<any>(0);
-
+function ProjectSlider() {
   return (
     <div className="py-0">
       <Slider {...settings}>

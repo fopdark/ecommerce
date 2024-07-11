@@ -1,9 +1,10 @@
-"use client";
-import React from "react";
-import { CalendarOutlined } from "@ant-design/icons";
-import Link from "antd/es/typography/Link";
+'use client';
 
-function NewsItem(props: any) {
+import { CalendarOutlined } from '@ant-design/icons';
+import Link from 'antd/es/typography/Link';
+import React from 'react';
+
+function NewsItem() {
   return (
     <div className="grid grid-cols-2 gap-2">
       <img src="https://media.loveitopcdn.com/2536/thumb/dinh-muc-du-toan-son-epoxy.jpg" />

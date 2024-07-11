@@ -3,25 +3,18 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 
-"use client";
+'use client';
 
-import Footer from "@/components/Footer";
-import { Header } from "@/components/Header";
-import MenuAntd from "@/components/Menu";
-import SliderSlick from "@/components/Slider";
-import News from "@/components/news/News";
-import NewsItem from "@/components/news/NewsItem";
-import ProductAnimationSlider from "@/components/products/ProductAnimationSlider";
-import ProductSlider from "@/components/products/ProductSlider";
-import Project from "@/components/project/Project";
-import ProjectSlider from "@/components/project/ProjectSlider";
-import ReviewSlider from "@/components/reviews/ReviewSlider";
-import { Avatar, Button, Form, Input } from "antd";
-import Link from "antd/es/typography/Link";
-import { InfoCircleOutlined } from "@ant-design/icons";
-import TextArea from "antd/es/input/TextArea";
-import GoogleMap from "@/components/map/GoogleMap";
-import Search from "antd/es/input/Search";
+import { Avatar } from 'antd';
+import Link from 'antd/es/typography/Link';
+
+import Footer from '@/components/Footer';
+import GoogleMap from '@/components/map/GoogleMap';
+import MenuAntd from '@/components/Menu';
+import ProductSlider from '@/components/products/ProductSlider';
+import ProjectSlider from '@/components/project/ProjectSlider';
+import ReviewSlider from '@/components/reviews/ReviewSlider';
+import SliderSlick from '@/components/Slider';
 
 export default function MainPage() {
   // return (
@@ -92,7 +85,7 @@ export default function MainPage() {
           <div className=" flex items-center gap-2">
             <b className="!text-white">Hotline:</b>
             <Link className="!text-white" href="tel:+84915441511">
-              0915.441.511 ( Mr.Duy) 
+              0915.441.511 ( Mr.Duy)
             </Link>
             <p className="text-white">-</p>
             <Link className="!text-white" href="tel:+84912851511">
@@ -321,7 +314,7 @@ export default function MainPage() {
                     className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Vui lòng nhập nội dung"
                     name="message"
-                    style={{ height: "121px" }}
+                    style={{ height: '121px' }}
                   ></textarea>
 
                   <div className="flex justify-center">

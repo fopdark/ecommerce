@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import '@/styles/global.css';
 import 'react-toastify/dist/ReactToastify.css';
-
 // Import slick css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import React from 'react';

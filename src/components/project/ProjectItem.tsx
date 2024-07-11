@@ -1,9 +1,8 @@
-"use client";
-import React from "react";
-import { CalendarOutlined } from "@ant-design/icons";
-import Link from "antd/es/typography/Link";
+'use client';
 
-function ProjectItem(props: any) {
+import React from 'react';
+
+function ProjectItem() {
   return (
     // <div className="grid grid-cols-2 gap-2">
     //   <img src="https://media.loveitopcdn.com/2536/thumb/nha-xuong-khoa-hoc-voi-son-epoxy.jpg" />

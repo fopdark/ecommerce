@@ -1,10 +1,11 @@
-"use client";
-import { Button } from "antd";
-import React, { useState } from "react";
-import Slider from "react-slick";
-import ProductCard from "./ProductCard";
+'use client';
 
-var settings = {
+import React from 'react';
+import Slider from 'react-slick';
+
+import ProductCard from './ProductCard';
+
+const settings = {
   dots: false,
   autoplay: true,
   autoplaySpeed: 3000,
@@ -15,8 +16,7 @@ var settings = {
 };
 
 function ProductSlider(props: any) {
-  const { title, categories, isPrice } = props;
-  const [selectedCategory, setSelectedCategory] = useState<any>(0);
+  const { isPrice } = props;
 
   return (
     <div className="py-0">
@@ -49,7 +49,7 @@ function ProductSlider(props: any) {
             isPrice={isPrice}
           />
         </div>
-   
+
         <div className="">
           <ProductCard
             img="https://kccvietnam.com/thumbs/260x185x1/upload/product/son-epoxy-kccvietnamcom-et5660-7703.jpg"
